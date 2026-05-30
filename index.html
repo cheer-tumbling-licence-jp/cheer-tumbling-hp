@@ -182,6 +182,52 @@ header.site-header{
   line-height:1.7;letter-spacing:.04em;
 }
 
+/* ===== Cheernic Feature ===== */
+.cheernic-feature{
+  background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 100%);
+}
+.cheernic-feature .container{max-width:1080px}
+.cheernic-feature .inner{
+  display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;
+  margin-top:48px;
+}
+.cheernic-feature .text h3{
+  font-family:var(--font-serif);font-size:26px;color:var(--navy);
+  margin:0 0 18px;letter-spacing:.04em;font-weight:700;line-height:1.5;
+}
+.cheernic-feature .text h3 .gold{color:var(--gold)}
+.cheernic-feature .text p{
+  color:var(--ink-soft);font-size:15px;line-height:2;margin:0 0 20px;
+  text-wrap:pretty;
+}
+.cheernic-feature .badges{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+.cheernic-feature .badge{
+  background:#fff;border:1px solid var(--gold);
+  color:var(--navy);padding:6px 14px;border-radius:2px;
+  font-size:12px;font-weight:700;letter-spacing:.04em;
+}
+.cheernic-feature .btn-feature{
+  display:inline-block;background:var(--navy);color:#fff;
+  padding:16px 32px;border-radius:4px;text-decoration:none;
+  font-weight:700;letter-spacing:.06em;font-size:14px;
+  transition:transform .15s,box-shadow .2s;margin-top:12px;
+}
+.cheernic-feature .btn-feature:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(10,38,71,.25)}
+.cheernic-feature .btn-feature::after{content:" →"}
+.cheernic-feature .visual{
+  position:relative;border-radius:2px;overflow:hidden;
+  box-shadow:0 20px 50px rgba(10,38,71,.18);
+}
+.cheernic-feature .visual img{width:100%;height:auto;display:block;aspect-ratio:4/3;object-fit:cover}
+.cheernic-feature .visual .overlay-logo{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:42%;max-width:200px;
+  filter:drop-shadow(0 8px 24px rgba(0,0,0,.5));
+}
+@media (max-width:880px){
+  .cheernic-feature .inner{grid-template-columns:1fr;gap:32px}
+}
+
 /* ===== Services ===== */
 .services{background:var(--paper)}
 .services h2.section-title{text-align:center}
@@ -333,6 +379,7 @@ footer.site-footer{
     <nav class="nav-links">
       <a href="#about">協会について</a>
       <a href="#services">事業内容</a>
+      <a href="cheernic.html">Cheernic</a>
       <a href="#news">お知らせ</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
@@ -428,6 +475,43 @@ footer.site-footer{
   </div>
 </section>
 
+<!-- ===== CHEERNIC FEATURE ===== -->
+<section class="cheernic-feature" id="cheernic">
+  <div class="container">
+    <p class="eyebrow center">Field Practice</p>
+    <h2 class="section-title center">現場での指導</h2>
+    <p class="section-lead center">
+      協会の理念を、全国の現場へ。<br>パートナーチーム「Cheernic（チアニック）」が、訪問指導という形で実践しています。
+    </p>
+
+    <div class="inner">
+      <div class="text">
+        <h3>
+          安全で正しいタンブリングを、<br>
+          <span class="gold">全国の現場へ届ける。</span>
+        </h3>
+        <p>
+          Cheernic（チアニック）は、当協会の代表理事 中村祐介とヘッドコーチ 前島一貴が運営する、タンブリングのプロコーチチームです。スポーツバイオメカニクスに基づいた指導理論を、全国のチアリーディング／チアダンスチームへ訪問指導の形で届けています。
+        </p>
+        <p>
+          チームの目標とレベルに合わせたオーダーメイドのプログラム、指導者向け講習会、栃木県内2拠点（足利市・佐野市）でのレギュラーレッスンなど、現場のニーズに応える多様な活動を展開しています。
+        </p>
+        <div class="badges">
+          <span class="badge">全国出張対応</span>
+          <span class="badge">指導者講習</span>
+          <span class="badge">15年以上の実績</span>
+          <span class="badge">70チーム以上</span>
+        </div>
+        <a class="btn-feature" href="cheernic.html">Cheernicの活動を詳しく見る</a>
+      </div>
+      <div class="visual">
+        <img src="assets/cheernic/hero.jpg" alt="Cheernic 訪問指導の様子">
+        <img class="overlay-logo" src="assets/cheernic/logo.png" alt="Cheernic">
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== NEWS ===== -->
 <section class="news" id="news">
   <div class="container">
@@ -487,6 +571,7 @@ footer.site-footer{
       <a href="https://licence.cheer-tumbling.jp/" target="_blank" rel="noopener">指導ライセンス</a>
       <a href="https://roadmap.cheer-tumbling.jp/" target="_blank" rel="noopener">ロードマップアプリ</a>
       <a href="#services">指導教本（準備中）</a>
+      <a href="cheernic.html">Cheernic（訪問指導）</a>
     </div>
     <div class="footer-col">
       <h4>お問い合わせ</h4>

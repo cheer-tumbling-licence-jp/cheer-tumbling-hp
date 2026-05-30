@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheernic（チアニック）｜タンブリングプロコーチチーム｜一般社団法人 チアタンブリング協会</title>
+<meta name="description" content="協会と理念を共有するプロコーチチーム「Cheernic（チアニック）」。スポーツバイオメカニクスに基づく安全なタンブリング指導を、全国のチアリーディング／チアダンスチームへ訪問指導でお届けします。代表：中村祐介・前島一貴。15年以上・70チーム以上の指導実績。">
+<meta name="theme-color" content="#0a2647">
+<link rel="canonical" href="https://cheer-tumbling.jp/cheernic.html">
+
+<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+<meta property="og:title" content="Cheernic（チアニック）｜タンブリングプロコーチチーム">
+<meta property="og:description" content="協会と理念を共有するプロコーチチーム。15年以上・70チーム以上の指導実績。全国出張対応・栃木県内2拠点。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cheer-tumbling.jp/cheernic.html">
+<meta property="og:image" content="https://cheer-tumbling.jp/assets/ogp-card.png">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="一般社団法人 チアタンブリング協会">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#0a2647;--navy-deep:#061a36;
+  --gold:#c9a247;--gold-light:#e7c97a;
+  --cream:#f6f1e6;--paper:#fbf9f4;
+  --ink:#1a1a1a;--ink-soft:#4a4a4a;--line:#d8cfb8;
+  --font-serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --font-sans:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --font-en:"Cormorant Garamond","Noto Serif JP",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font-sans);color:var(--ink);background:var(--paper);
+  line-height:1.85;font-feature-settings:"palt";
+  -webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+section{padding:96px 24px}
+.container{max-width:1080px;margin:0 auto}
+.center{text-align:center}
+
+.eyebrow{
+  font-family:var(--font-en);letter-spacing:.28em;font-size:13px;
+  color:var(--gold);text-transform:uppercase;margin:0 0 14px;font-weight:600;
+}
+.eyebrow::before,.eyebrow::after{
+  content:"";display:inline-block;width:24px;height:1px;
+  background:var(--gold);vertical-align:middle;margin:0 12px;
+}
+h2.section-title{
+  font-family:var(--font-serif);font-weight:900;
+  font-size:clamp(26px,3.4vw,38px);line-height:1.45;
+  margin:0 0 18px;letter-spacing:.04em;
+}
+.section-lead{max-width:720px;margin:0 auto 56px;color:var(--ink-soft);font-size:16px;text-wrap:pretty}
+.divider{width:60px;height:2px;background:var(--gold);margin:0 auto 32px}
+
+/* ===== ヘッダー（協会HPと統一） ===== */
+header.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(10,38,71,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(201,162,71,.3);
+}
+.nav{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 24px;color:#fff;
+}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#fff}
+.brand img{width:54px;height:54px;object-fit:contain}
+.brand-text{line-height:1.25;border-left:1px solid rgba(231,201,122,.4);padding-left:14px}
+.brand-text .en{font-family:var(--font-en);font-size:11px;letter-spacing:.22em;color:var(--gold-light);font-weight:600}
+.brand-text .jp{font-family:var(--font-serif);font-size:14px;font-weight:700;letter-spacing:.04em}
+@media (max-width:520px){.brand-text{display:none}}
+.nav-links{display:flex;gap:28px;font-size:14px}
+.nav-links a{text-decoration:none;color:#fff;opacity:.85}
+.nav-links a:hover{opacity:1;color:var(--gold-light)}
+@media (max-width:760px){.nav-links{display:none}}
+
+/* ===== ヒーロー ===== */
+.hero{
+  position:relative;color:#fff;
+  background:
+    linear-gradient(135deg,rgba(6,26,54,.78) 0%,rgba(10,38,71,.65) 60%,rgba(6,26,54,.85) 100%),
+    url("assets/cheernic/hero.jpg") center/cover no-repeat,
+    var(--navy-deep);
+  padding:120px 24px;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.hero-inner{max-width:1080px;margin:0 auto;text-align:center}
+.hero-eyebrow{
+  font-family:var(--font-en);letter-spacing:.32em;color:var(--gold-light);
+  font-size:13px;font-weight:600;margin:0 0 22px;
+}
+.hero img.cheernic-logo{
+  max-width:280px;margin:0 auto 28px;
+  filter:drop-shadow(0 8px 24px rgba(0,0,0,.4));
+}
+.hero h1{
+  font-family:var(--font-serif);font-weight:900;
+  font-size:clamp(28px,4vw,46px);line-height:1.4;letter-spacing:.05em;
+  margin:0 0 22px;text-wrap:pretty;
+}
+.hero h1 .accent{color:var(--gold-light)}
+.hero p.lead{
+  font-size:16.5px;line-height:2;max-width:680px;margin:0 auto;
+  color:rgba(255,255,255,.92);text-wrap:pretty;
+}
+.hero-tags{
+  display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center;
+  font-family:var(--font-en);letter-spacing:.18em;font-size:12px;color:var(--gold-light);
+  margin-top:32px;
+}
+.hero-tags span{border:1px solid rgba(231,201,122,.5);padding:6px 14px;border-radius:2px}
+
+/* ===== 関係性の説明（注意書き） ===== */
+.relation-note{
+  background:var(--cream);padding:36px 24px;
+  border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);
+  font-size:13.5px;color:var(--ink-soft);text-align:center;line-height:2;
+}
+.relation-note strong{color:var(--navy);font-weight:700}
+.relation-note .container{max-width:780px}
+
+/* ===== Mission ===== */
+.mission{background:var(--paper)}
+.mission .container{max-width:860px}
+.mission h2.section-title{text-align:center}
+.mission-body{font-size:16px;line-height:2.1;color:var(--ink-soft);text-wrap:pretty}
+.mission-body p{margin:0 0 24px}
+.mission-body strong{color:var(--navy);font-weight:700;background:linear-gradient(transparent 60%,rgba(201,162,71,.25) 60%);padding:0 4px}
+.mission-quote{
+  margin-top:40px;padding:36px;background:#fff;border-left:3px solid var(--gold);text-align:center;
+}
+.mission-quote p{
+  margin:0;font-family:var(--font-serif);font-weight:700;
+  color:var(--navy);font-size:clamp(18px,2vw,22px);line-height:1.7;letter-spacing:.04em;
+}
+
+/* ===== Coaches ===== */
+.coaches{background:var(--cream)}
+.coaches h2.section-title{text-align:center}
+.coaches .section-lead{text-align:center}
+.coach-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:48px;
+}
+.coach-card{
+  background:#fff;border:1px solid var(--line);overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.coach-card .photo{
+  width:100%;aspect-ratio:4/3;object-fit:cover;background:#eee;
+}
+.coach-card .body{padding:32px 28px}
+.coach-card .role{
+  font-family:var(--font-en);font-size:11px;letter-spacing:.2em;
+  color:var(--gold);font-weight:600;margin-bottom:8px;
+}
+.coach-card h3{
+  font-family:var(--font-serif);font-size:24px;color:var(--navy);
+  margin:0 0 14px;letter-spacing:.04em;font-weight:700;
+}
+.coach-card p{margin:0;font-size:14px;color:var(--ink-soft);line-height:1.9}
+@media (max-width:760px){.coach-grid{grid-template-columns:1fr}}
+
+/* ===== Activities ===== */
+.activities{background:linear-gradient(180deg,var(--navy-deep),var(--navy));color:#fff}
+.activities h2.section-title{text-align:center;color:#fff}
+.activities .eyebrow{color:var(--gold-light)}
+.activities .section-lead{text-align:center;color:rgba(255,255,255,.8)}
+.act-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;
+}
+.act-card{
+  padding:36px 28px;
+  border:1px solid rgba(231,201,122,.25);background:rgba(255,255,255,.04);
+  text-align:center;border-radius:2px;
+}
+.act-card .icon{
+  width:60px;height:60px;margin:0 auto 20px;
+  border:1px solid var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;color:var(--gold-light);
+}
+.act-card h3{
+  font-family:var(--font-serif);font-size:18px;color:var(--gold-light);
+  margin:0 0 12px;letter-spacing:.04em;font-weight:700;
+}
+.act-card p{margin:0;color:rgba(255,255,255,.85);font-size:14px;line-height:1.85}
+@media (max-width:760px){.act-grid{grid-template-columns:1fr}}
+
+/* ===== Stats ===== */
+.stats{background:var(--paper)}
+.stats h2.section-title{text-align:center}
+.stat-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;
+}
+.stat{
+  text-align:center;padding:36px 24px;
+  background:#fff;border:1px solid var(--line);border-radius:2px;
+}
+.stat .number{
+  font-family:var(--font-en);font-size:48px;color:var(--gold);
+  font-weight:700;line-height:1;margin-bottom:12px;
+}
+.stat .label{
+  font-family:var(--font-serif);color:var(--navy);font-size:14px;
+  letter-spacing:.08em;font-weight:700;
+}
+@media (max-width:760px){.stat-grid{grid-template-columns:1fr;gap:16px}}
+
+/* ===== CTA ===== */
+.cta{
+  background:
+    linear-gradient(135deg,rgba(6,26,54,.92) 0%,rgba(10,38,71,.85) 100%),
+    url("assets/hero-bg.png") center/cover no-repeat,
+    var(--navy-deep);
+  color:#fff;text-align:center;padding:110px 24px;
+}
+.cta h2{
+  font-family:var(--font-serif);font-weight:900;
+  font-size:clamp(26px,3.6vw,40px);line-height:1.5;color:#fff;
+  margin:0 0 24px;letter-spacing:.05em;
+}
+.cta p{
+  max-width:560px;margin:0 auto 36px;
+  color:rgba(255,255,255,.9);font-size:15.5px;line-height:2;
+}
+.cta-button{
+  display:inline-block;
+  background:var(--gold);color:var(--navy-deep);
+  padding:18px 40px;border-radius:4px;text-decoration:none;
+  font-weight:700;letter-spacing:.06em;font-size:15px;
+  box-shadow:0 4px 18px rgba(201,162,71,.35);
+  transition:transform .15s,box-shadow .2s;
+}
+.cta-button:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,162,71,.5)}
+.cta-secondary{
+  display:block;margin-top:24px;font-family:var(--font-en);
+  color:var(--gold-light);font-size:13px;letter-spacing:.06em;text-decoration:underline;
+}
+.cta-back{
+  display:inline-block;margin-top:48px;
+  font-family:var(--font-en);font-size:12px;letter-spacing:.2em;
+  color:rgba(255,255,255,.6);text-decoration:none;
+}
+.cta-back:hover{color:var(--gold-light)}
+.cta-back::before{content:"← "}
+
+/* ===== Footer ===== */
+footer.site-footer{background:var(--navy-deep);color:rgba(255,255,255,.7);padding:56px 24px 32px;font-size:13px}
+.footer-inner{
+  max-width:1080px;margin:0 auto;
+  display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;
+}
+.footer-brand{display:flex;gap:18px;align-items:flex-start}
+.footer-brand img{width:80px;height:80px;object-fit:contain;background:#fff;border-radius:8px;padding:6px}
+.footer-brand .name{font-family:var(--font-serif);font-weight:700;color:#fff;font-size:15px;margin-bottom:6px}
+.footer-brand .en{font-family:var(--font-en);letter-spacing:.18em;color:var(--gold-light);font-size:11px;margin-bottom:12px}
+.footer-brand p{margin:0;font-size:12.5px;line-height:1.8}
+.footer-col h4{font-family:var(--font-serif);color:#fff;font-size:13px;margin:0 0 14px;letter-spacing:.1em}
+.footer-col a{color:rgba(255,255,255,.7);text-decoration:none;display:block;padding:4px 0;font-size:13px}
+.footer-col a:hover{color:var(--gold-light)}
+.copyright{
+  max-width:1080px;margin:48px auto 0;
+  padding-top:24px;border-top:1px solid rgba(255,255,255,.1);
+  text-align:center;font-size:11.5px;color:rgba(255,255,255,.5);letter-spacing:.08em;
+}
+@media (max-width:760px){.footer-inner{grid-template-columns:1fr;gap:32px}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/">
+      <img src="assets/cta-brand-logo.png" alt="一般社団法人 チアタンブリング協会">
+      <div class="brand-text">
+        <div class="en">CHEER TUMBLING ASSOCIATION</div>
+        <div class="jp">一般社団法人 チアタンブリング協会</div>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="/#about">協会について</a>
+      <a href="/#services">事業内容</a>
+      <a href="/cheernic.html">Cheernic</a>
+      <a href="/#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">PRO COACHING PARTNER</p>
+    <img src="assets/cheernic/logo.png" alt="Cheernic" class="cheernic-logo">
+    <h1>
+      安全で正しいタンブリングを、<br>
+      <span class="accent">全国の現場へ。</span>
+    </h1>
+    <p class="lead">
+      スポーツバイオメカニクスに基づくチアタンブリングの専門プロコーチチーム。<br>
+      協会の理念を共有し、全国のチアリーディング／チアダンスチームに訪問指導をお届けします。
+    </p>
+    <div class="hero-tags">
+      <span>EST. 2010</span>
+      <span>NATIONWIDE</span>
+      <span>15+ YEARS</span>
+      <span>70+ TEAMS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 関係性の注意書き ===== -->
+<div class="relation-note">
+  <div class="container">
+    <strong>Cheernic（チアニック）について</strong><br>
+    Cheernicは、一般社団法人チアタンブリング協会の代表理事 中村祐介とヘッドコーチ 前島一貴が、<strong>協会とは別の活動主体</strong>として運営するプロコーチチームです。<br>
+    協会の理念「安全と理論に基づくタンブリング指導の普及」を、<strong>現場での訪問指導</strong>という形で実践しています。
+  </div>
+</div>
+
+<!-- ===== MISSION ===== -->
+<section class="mission">
+  <div class="container">
+    <p class="eyebrow center">Our Mission</p>
+    <h2 class="section-title">私たちの理念</h2>
+    <div class="divider"></div>
+    <div class="mission-body">
+      <p>
+        タンブリングは、チアリーディング／チアダンスの華やかな表現を支える中核技術です。一方で、<strong>誤った指導は重大な事故につながる分野</strong>でもあります。
+      </p>
+      <p>
+        Cheernic（チアニック）は、<strong>スポーツバイオメカニクス</strong>に基づき、力学と解剖学で「なぜできない／なぜ危ない」を解き明かし、「だからこうする」を納得して練習できる指導を行います。経験や感覚だけに頼らず、<strong>根拠と理論に裏打ちされた指導</strong>を、選手と指導者の両方に届ける——それが私たちの一貫した姿勢です。
+      </p>
+      <div class="mission-quote">
+        <p>「安全で正しいタンブリングを、<br>全国の現場へ届けつづける。」</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COACHES ===== -->
+<section class="coaches">
+  <div class="container">
+    <p class="eyebrow center">Coaches</p>
+    <h2 class="section-title">コーチ陣</h2>
+    <p class="section-lead">タンブリングの最前線で長年指導を行ってきた2名のプロコーチが、現場であなたのチームを支えます。</p>
+
+    <div class="coach-grid">
+      <div class="coach-card">
+        <img src="assets/cheernic/coach-nakamura.jpg" alt="中村 祐介" class="photo">
+        <div class="body">
+          <div class="role">REPRESENTATIVE COACH</div>
+          <h3>中村 祐介</h3>
+          <p>
+            一般社団法人 チアタンブリング協会 代表理事。元体操競技選手。チアリーディング／チアダンスの指導歴18年、株式会社代表取締役。バイオメカニクスに基づく段階的指導と、選手・指導者育成プログラムの設計・運営を担当。
+          </p>
+        </div>
+      </div>
+      <div class="coach-card">
+        <img src="assets/cheernic/coach-maeshima.jpg" alt="前島 一貴" class="photo">
+        <div class="body">
+          <div class="role">HEAD COACH / TECHNICAL ADVISER</div>
+          <h3>前島 一貴</h3>
+          <p>
+            ヘッドコーチ／テクニカルアドバイザー。体操競技国際指導ライセンス保持。体操・タンブリングの専門技術を体系化し、現場での実技指導と段階的なドリル設計を担当。多数のチームで技術向上をサポート。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACTIVITIES ===== -->
+<section class="activities">
+  <div class="container">
+    <p class="eyebrow center">What We Do</p>
+    <h2 class="section-title">活動内容</h2>
+    <p class="section-lead">チームの目標とレベルに合わせ、現場で活きる指導をお届けします。</p>
+
+    <div class="act-grid">
+      <div class="act-card">
+        <div class="icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2C8 6 6 10 6 14a6 6 0 0012 0c0-4-2-8-6-12z"/>
+          </svg>
+        </div>
+        <h3>全国出張 訪問指導</h3>
+        <p>北海道から九州まで、全国のチアリーディング／チアダンスチームへ出張指導。チームの課題に合わせたオーダーメイドのプログラムをご提供します。</p>
+      </div>
+      <div class="act-card">
+        <div class="icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z"/>
+          </svg>
+        </div>
+        <h3>指導者講習</h3>
+        <p>コーチ・指導者向けの講習会を開催。スポーツバイオメカニクスに基づく指導理論と、現場で使える観察ポイント・矯正ドリルをお伝えします。</p>
+      </div>
+      <div class="act-card">
+        <div class="icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="10" r="3"/>
+            <path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8z"/>
+          </svg>
+        </div>
+        <h3>栃木県内2拠点レッスン</h3>
+        <p>栃木県足利市・佐野市の2拠点でレギュラーレッスンを開催。個人選手からチーム単位まで、現地での継続的な指導が可能です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="container">
+    <p class="eyebrow center">Track Record</p>
+    <h2 class="section-title">実績</h2>
+    <div class="divider"></div>
+
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="number">15+</div>
+        <div class="label">YEARS OF EXPERIENCE</div>
+      </div>
+      <div class="stat">
+        <div class="number">70+</div>
+        <div class="label">TEAMS COACHED</div>
+      </div>
+      <div class="stat">
+        <div class="number">2</div>
+        <div class="label">PROFESSIONAL COACHES</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <div class="container">
+    <p class="eyebrow center">Get In Touch</p>
+    <h2>
+      訪問指導・指導者講習の<br>
+      <span style="color:var(--gold-light)">ご依頼・ご相談</span>
+    </h2>
+    <p>
+      チームの目標と現状をヒアリングし、最適な指導プログラムをご提案します。<br>
+      詳しい活動内容・お問い合わせは Cheernic 公式サイトをご覧ください。
+    </p>
+    <a class="cta-button" href="https://cheernic.netlify.app/" target="_blank" rel="noopener">Cheernic 公式サイトを見る</a>
+    <a class="cta-secondary" href="mailto:cheernicpro@gmail.com">cheernicpro@gmail.com</a>
+
+    <a class="cta-back" href="/">協会HPに戻る</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/cta-brand-logo.png" alt="CTA">
+      <div>
+        <div class="name">一般社団法人 チアタンブリング協会</div>
+        <div class="en">CHEER TUMBLING ASSOCIATION</div>
+        <p>安全と理論に基づくタンブリング指導の普及・指導者育成・教材開発を行う認定団体です。</p>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>事業内容</h4>
+      <a href="https://licence.cheer-tumbling.jp/" target="_blank" rel="noopener">指導ライセンス</a>
+      <a href="https://roadmap.cheer-tumbling.jp/" target="_blank" rel="noopener">ロードマップアプリ</a>
+      <a href="/cheernic.html">Cheernic（訪問指導）</a>
+    </div>
+    <div class="footer-col">
+      <h4>関連リンク</h4>
+      <a href="https://cheernic.netlify.app/" target="_blank" rel="noopener">Cheernic 公式サイト</a>
+      <a href="https://www.instagram.com/cheernic/" target="_blank" rel="noopener">Cheernic Instagram</a>
+      <a href="/">協会HP トップ</a>
+    </div>
+  </div>
+  <div class="copyright">© Cheer Tumbling Association. All Rights Reserved.</div>
+</footer>
+
+</body>
+</html>
