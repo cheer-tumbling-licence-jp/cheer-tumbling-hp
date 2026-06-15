@@ -97,10 +97,47 @@ h2.section-title{
 }
 
 /* ===== ヘッダー ===== */
+/* ===== 上部告知バー（チーム講習） ===== */
+.team-notice-bar{
+  position:sticky;top:0;z-index:101;
+  display:flex;align-items:center;justify-content:center;
+  gap:12px;
+  background:linear-gradient(90deg,#061a36 0%,#1a3a5f 50%,#061a36 100%);
+  color:#fff;text-decoration:none;
+  padding:10px 24px;
+  font-size:13.5px;letter-spacing:.04em;
+  border-bottom:1px solid var(--gold);
+  transition:background .2s;
+}
+.team-notice-bar:hover{background:linear-gradient(90deg,#04111f 0%,#0a2647 50%,#04111f 100%)}
+.team-notice-bar .new-badge{
+  background:var(--gold);color:var(--navy-deep);
+  font-family:var(--font-en);
+  font-size:10px;font-weight:700;letter-spacing:.18em;
+  padding:3px 9px;border-radius:2px;
+}
+.team-notice-bar .label{
+  font-weight:700;color:var(--gold-light);
+  font-size:14.5px;letter-spacing:.06em;
+}
+.team-notice-bar .dot{opacity:.4;color:var(--gold-light)}
+.team-notice-bar .text{color:rgba(255,255,255,.95)}
+.team-notice-bar .arrow{color:var(--gold);font-weight:700;transition:transform .2s}
+.team-notice-bar:hover .arrow{transform:translateX(4px)}
+@media (max-width:600px){
+  .team-notice-bar{font-size:11.5px;padding:8px 12px;gap:8px;flex-wrap:wrap}
+  .team-notice-bar .label{font-size:12.5px}
+  .team-notice-bar .new-badge{font-size:9px;padding:2px 7px;letter-spacing:.14em}
+  .team-notice-bar .dot{display:none}
+}
+
 header.site-header{
-  position:sticky;top:0;z-index:100;
+  position:sticky;top:42px;z-index:100;
   background:rgba(10,38,71,.96);backdrop-filter:blur(8px);
   border-bottom:1px solid rgba(201,162,71,.3);
+}
+@media (max-width:600px){
+  header.site-header{top:38px}
 }
 .nav{
   max-width:1200px;margin:0 auto;
@@ -249,6 +286,32 @@ header.site-header{
   border:1px solid var(--gold);border-radius:50%;
   display:flex;align-items:center;justify-content:center;color:var(--gold);
 }
+.service-card .visual{
+  margin:-36px -28px 24px;
+  background:linear-gradient(180deg,var(--paper) 0%,var(--cream) 100%);
+  border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  padding:28px 24px;
+  min-height:240px;
+  position:relative;
+  overflow:hidden;
+}
+.service-card .visual img{
+  max-width:100%;max-height:200px;
+  width:auto;height:auto;
+  display:block;
+  box-shadow:0 10px 28px rgba(10,38,71,.18);
+  border:1px solid rgba(10,38,71,.08);
+  background:#fff;
+  transition:transform .25s;
+}
+.service-card:hover .visual img{transform:translateY(-3px)}
+.service-card .visual.app-shot img{
+  max-height:240px;
+  box-shadow:0 12px 32px rgba(10,38,71,.22);
+  border-radius:14px;
+  border:6px solid #1a1a1a;
+}
 .service-card h3{
   font-family:var(--font-serif);font-size:19px;color:var(--navy);
   margin:0 0 14px;letter-spacing:.04em;font-weight:700;
@@ -265,6 +328,82 @@ header.site-header{
 .service-card.coming .link-text{color:var(--ink-soft);opacity:.6}
 .service-card.coming .link-text::after{content:""}
 @media (max-width:880px){.services-grid{grid-template-columns:1fr}}
+
+/* ===== チーム講習 ===== */
+.team-training{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden}
+.team-training::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,162,71,.18), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(201,162,71,.12), transparent 70%);
+  pointer-events:none;
+}
+.team-training .container{position:relative;z-index:1;max-width:1080px}
+.team-training .eyebrow{color:var(--gold-light)}
+.team-training h2.section-title{color:#fff;text-align:center}
+.team-training .section-lead{color:rgba(255,255,255,.85);text-align:center;max-width:720px;margin:0 auto 40px}
+.team-pillars{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;
+}
+.team-pillar{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(201,162,71,.4);
+  padding:24px 22px;
+  border-radius:2px;
+}
+.team-pillar .pillar-num{
+  font-family:var(--font-en);font-size:13px;letter-spacing:.18em;
+  color:var(--gold);font-weight:600;margin-bottom:8px;
+}
+.team-pillar h3{
+  font-family:var(--font-serif);font-size:17px;color:#fff;
+  margin:0 0 10px;letter-spacing:.04em;
+}
+.team-pillar p{
+  margin:0;color:rgba(255,255,255,.85);
+  font-size:13.5px;line-height:1.8;
+}
+.team-cta-block{
+  margin-top:36px;padding:30px 28px;
+  background:rgba(201,162,71,.06);
+  border:1px solid rgba(201,162,71,.4);
+  text-align:center;
+}
+.team-cta-block .lead{
+  font-size:13.5px;color:rgba(255,255,255,.85);
+  margin:0 0 18px;line-height:1.75;
+}
+.team-cta-block .actions{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+}
+.team-cta-block .btn-primary{
+  display:inline-block;
+  background:var(--gold);color:var(--navy-deep);
+  padding:14px 30px;border-radius:2px;
+  font-weight:700;text-decoration:none;
+  letter-spacing:.06em;font-size:14.5px;
+  transition:transform .15s,box-shadow .2s;
+}
+.team-cta-block .btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(201,162,71,.3);
+}
+.team-cta-block .btn-secondary{
+  display:inline-block;
+  background:transparent;color:#fff;
+  padding:14px 30px;border-radius:2px;
+  border:1px solid rgba(201,162,71,.6);
+  font-weight:600;text-decoration:none;
+  letter-spacing:.06em;font-size:14.5px;
+  transition:background .2s,border-color .2s;
+}
+.team-cta-block .btn-secondary:hover{
+  background:rgba(201,162,71,.1);
+  border-color:var(--gold);
+}
+@media (max-width:880px){
+  .team-pillars{grid-template-columns:1fr}
+}
 
 /* ===== News ===== */
 .news{background:linear-gradient(180deg,var(--navy-deep) 0%,var(--navy) 100%);color:#fff}
@@ -362,6 +501,15 @@ footer.site-footer{
 </head>
 <body>
 
+<!-- ===== 上部告知バー（チーム講習 受付窓口）===== -->
+<a class="team-notice-bar" href="#team">
+  <span class="new-badge">NEW</span>
+  <span class="label">チーム単位の出張講習</span>
+  <span class="dot">·</span>
+  <span class="text">受付窓口 開設中</span>
+  <span class="arrow">→</span>
+</a>
+
 <header class="site-header">
   <div class="nav">
     <a class="brand" href="#top">
@@ -374,6 +522,7 @@ footer.site-footer{
     <nav class="nav-links">
       <a href="#about">協会について</a>
       <a href="#services">事業内容</a>
+      <a href="#team">チーム講習</a>
       <a href="cheernic.html">Cheernic</a>
       <a href="#news">お知らせ</a>
       <a href="#contact">お問い合わせ</a>
@@ -437,10 +586,10 @@ footer.site-footer{
       <!-- 指導ライセンス -->
       <a class="service-card" href="https://licence.cheer-tumbling.jp/" target="_blank" rel="noopener">
         <span class="badge live">受付中</span>
-        <div class="icon-wrap">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 17l-6.5 4 2-7.5L2 9h7z"/></svg>
+        <div class="visual">
+          <img src="assets/services/pamphlet-cover.png" alt="チアタンブリング指導ライセンス 公式パンフレット 表紙">
         </div>
-        <h3>タンブリング指導ライセンス</h3>
+        <h3>チアタンブリング指導ライセンス</h3>
         <p>安全管理・段階的指導・基礎構造の理解を体系化した、指導者のための認定資格制度。2級（基礎）・1級（上級）の二段階構成で、現場で活きる判断力を養います。</p>
         <span class="link-text">詳しく見る</span>
       </a>
@@ -448,8 +597,8 @@ footer.site-footer{
       <!-- ロードマップアプリ -->
       <a class="service-card" href="https://roadmap.cheer-tumbling.jp/" target="_blank" rel="noopener">
         <span class="badge live">公開中</span>
-        <div class="icon-wrap">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+        <div class="visual app-shot">
+          <img src="assets/services/roadmap-app.png" alt="チアタンブリング ロードマップ アプリ画面">
         </div>
         <h3>チアタンブリング ロードマップ</h3>
         <p>技ごとの習得順序・観察ポイント・つまずき要因・矯正ドリルを、指導者と選手の両方が活用できる形にまとめたWebアプリ。スマホで現場ですぐ確認できます。</p>
@@ -457,14 +606,56 @@ footer.site-footer{
       </a>
 
       <!-- 教本・教材 -->
-      <div class="service-card coming">
-        <span class="badge">準備中</span>
-        <div class="icon-wrap">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h12a4 4 0 014 4v12a0 0 0 010 0H8a4 4 0 01-4-4V4z"/><path d="M4 4v12a4 4 0 004 4"/></svg>
+      <a class="service-card" href="https://licence.cheer-tumbling.jp/" target="_blank" rel="noopener">
+        <span class="badge live">完成</span>
+        <div class="visual">
+          <img src="assets/services/textbook-2kyu-cover.png" alt="チアタンブリング指導ライセンス 2級 公式教本 表紙">
         </div>
-        <h3>指導教本・教材</h3>
-        <p>スポーツバイオメカニクスに基づく根拠と理論を体系化した、指導者のための公式教本シリーズ。1級・2級ライセンスの公式教材として、現在制作を進めています。</p>
-        <span class="link-text">Coming Soon</span>
+        <h3>公式指導教本</h3>
+        <p>スポーツバイオメカニクスに基づく根拠と理論を体系化した、指導者のための公式教本シリーズ。2級教本（第1巻）が完成し、ライセンス受講生に教材としてお届けしています。1級教本も制作中。</p>
+        <span class="link-text">詳しく見る</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM TRAINING ===== -->
+<section class="team-training" id="team">
+  <div class="container">
+    <p class="eyebrow center">For Teams</p>
+    <h2 class="section-title">チーム単位の出張講習</h2>
+    <p class="section-lead">
+      指導者数名でのご受講をご検討のチームへ。<br>
+      協会代表理事 中村祐介が貴チームの練習会場まで出向き、<br>
+      講義と認定試験を一日で完結する出張型のプログラムをご用意しています。
+    </p>
+
+    <div class="team-pillars">
+      <div class="team-pillar">
+        <div class="pillar-num">PLAN A</div>
+        <h3>エリア合同講習</h3>
+        <p>複数チーム合同で開催する主軸プラン。1チームあたりの負担を抑えつつ、地域単位で資格制度を広げます。催行人数 10〜15名。</p>
+      </div>
+      <div class="team-pillar">
+        <div class="pillar-num">PLAN B</div>
+        <h3>単独チーム講習</h3>
+        <p>1チーム単独での開催をご希望のチーム向け。最低3名から催行可能なオプションプラン。日程・会場は応相談。</p>
+      </div>
+      <div class="team-pillar">
+        <div class="pillar-num">★ POINT</div>
+        <h3>個人受験と同じ資格</h3>
+        <p>試験問題・採点基準は個人受験と完全に同一。交付される認定証も「チアタンブリング指導ライセンス 2級」で、資格の重みは変わりません。</p>
+      </div>
+    </div>
+
+    <div class="team-cta-block">
+      <p class="lead">
+        ※ 2026年度は試験運用期間です。料金体系・日程の詳細は、ご相談時に個別にご案内いたします。<br>
+        ご検討中のチーム様は、お気軽にご相談ください。
+      </p>
+      <div class="actions">
+        <a class="btn-primary" href="mailto:cheer.tumbling.association@gmail.com?subject=%E3%80%90%E3%83%81%E3%83%BC%E3%83%A0%E8%AC%9B%E7%BF%92%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=%E3%81%94%E6%89%80%E5%B1%9E%E3%83%81%E3%83%BC%E3%83%A0%E5%90%8D%EF%BC%9A%0A%E3%81%94%E6%8B%85%E5%BD%93%E8%80%85%E5%90%8D%EF%BC%9A%0A%E5%B8%8C%E6%9C%9B%E5%8F%97%E8%AC%9B%E5%93%A1%E6%95%B0%EF%BC%9A%0A%E6%8F%90%E6%A1%88%E4%BC%9A%E5%A0%B4%E3%83%BB%E5%9C%B0%E5%9F%9F%EF%BC%9A%0A%E5%B8%8C%E6%9C%9B%E6%99%82%E6%9C%9F%EF%BC%9A%0A%E3%81%94%E8%B3%AA%E5%95%8F%E3%83%BB%E3%81%94%E8%A6%81%E6%9C%9B%EF%BC%9A%0A%0A%E2%80%BB%E5%8D%94%E4%BC%9A%E3%81%8B%E3%82%89%E6%95%B0%E6%97%A5%E4%BB%A5%E5%86%85%E3%81%AB%E6%8B%85%E5%BD%93%E3%82%88%E3%82%8A%E3%81%94%E9%80%A3%E7%B5%A1%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%99%E3%80%82">チーム講習の問い合わせ</a>
+        <a class="btn-secondary" href="https://licence.cheer-tumbling.jp/#team" target="_blank" rel="noopener">資格LPで詳細を見る</a>
       </div>
     </div>
   </div>
@@ -514,10 +705,16 @@ footer.site-footer{
     <p class="section-lead">最新の活動・申込情報をお届けします。</p>
 
     <div class="news-list">
+      <a class="news-item" href="#team">
+        <div class="date"><small>2026 / JUN</small>受付開始</div>
+        <div class="title">
+          <strong>チーム単位の出張講習</strong> 受付窓口を開設しました。お気軽にご相談ください。
+        </div>
+      </a>
       <a class="news-item" href="https://licence.cheer-tumbling.jp/" target="_blank" rel="noopener">
         <div class="date"><small>2027 / SEP</small>申込受付中</div>
         <div class="title">
-          <strong>2027年度 タンブリング指導ライセンス</strong> 受講受験生 受付中（締切：4月15日）
+          <strong>2027年度 チアタンブリング指導ライセンス</strong> 受講受験生 受付中（締切：4月15日）
         </div>
       </a>
       <a class="news-item" href="https://roadmap.cheer-tumbling.jp/" target="_blank" rel="noopener">
@@ -563,6 +760,7 @@ footer.site-footer{
     <div class="footer-col">
       <h4>事業内容</h4>
       <a href="https://licence.cheer-tumbling.jp/" target="_blank" rel="noopener">指導ライセンス</a>
+      <a href="#team">チーム単位の出張講習</a>
       <a href="https://roadmap.cheer-tumbling.jp/" target="_blank" rel="noopener">ロードマップアプリ</a>
       <a href="#services">指導教本（準備中）</a>
       <a href="cheernic.html">Cheernic（訪問指導）</a>
