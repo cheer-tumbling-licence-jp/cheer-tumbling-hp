@@ -163,15 +163,17 @@ footer.site-footer{background:var(--navy-deep);color:rgba(255,255,255,.7);paddin
 .fee-wrap{border:1px solid var(--line);border-radius:12px;background:#fff;padding:26px 28px;margin:0 0 32px}
 .fee-wrap h3{font-family:var(--font-serif);font-size:16px;color:var(--navy);margin:0 0 6px;letter-spacing:.04em}
 .fee-wrap .fee-lead{font-size:13.5px;color:var(--ink-soft);margin:0 0 20px}
-.fee-range{background:var(--cream);border-radius:10px;padding:26px 24px;text-align:center}
+.fee-range{background:var(--cream);border-radius:10px;padding:30px 24px;text-align:center}
 .fee-range .fr-label{display:block;font-size:12px;letter-spacing:.16em;color:var(--ink-soft);
-  font-weight:700;margin-bottom:10px}
+  font-weight:700;margin-bottom:12px}
 .fee-range .fr-amount{display:block;font-family:var(--font-serif);font-weight:900;color:var(--navy);
-  font-size:clamp(26px,5vw,38px);line-height:1.25;font-variant-numeric:tabular-nums;letter-spacing:.01em}
-.fee-range .fr-amount small{font-size:.5em;font-weight:700;margin-left:2px}
-.fee-range .fr-tilde{color:var(--gold);margin:0 6px;font-weight:700}
-.fee-range .fr-note{display:block;font-size:13px;color:var(--ink-soft);line-height:1.8;margin-top:16px}
-.fee-foot{font-size:12.5px;color:var(--ink-soft);margin:16px 0 0;line-height:1.8}
+  font-size:clamp(34px,6.5vw,50px);line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.fee-range .fr-amount small{font-size:.46em;font-weight:700;margin-left:2px}
+.fee-range .fr-tax{display:inline-block;font-family:var(--font-sans);font-size:11.5px;font-weight:700;
+  letter-spacing:.1em;color:var(--ink-soft);background:#fff;border:1px solid var(--line);
+  border-radius:3px;padding:3px 8px;margin-left:12px;vertical-align:middle}
+.fee-foot{font-size:13px;color:var(--ink-soft);margin:18px 0 0;line-height:1.9}
+.fee-foot strong{color:var(--navy)}
 </style>
 </head>
 <body>
@@ -302,14 +304,16 @@ footer.site-footer{background:var(--navy-deep);color:rgba(255,255,255,.7);paddin
 
     <div class="fee-wrap">
       <h3>受講料</h3>
-      <p class="fee-lead">2級講習費と、当日の対面講習にかかる費用を含んだ金額です。</p>
+      <p class="fee-lead">2級講習費・実技講習・会場費を含んだ金額です。追加のご負担はありません。</p>
       <div class="fee-range">
         <span class="fr-label">おひとりあたり</span>
-        <span class="fr-amount">33,700<small>円</small> <span class="fr-tilde">〜</span> 45,700<small>円</small></span>
-        <span class="fr-note">ご参加人数により変動します。人数が多いほど、お一人あたりのご負担は軽くなります。<br>
-        （目安：10名のご参加で 37,700円）</span>
+        <span class="fr-amount">39,800<small>円</small><span class="fr-tax">税込</span></span>
       </div>
-      <p class="fee-foot">参加人数の確定後、お一人あたりの金額を確定してご案内いたします。</p>
+      <p class="fee-foot">
+        <strong>最少催行人数は8名です。</strong>
+        ご参加が8名に満たない場合は、別日での開催として改めて日程を調整し、ご案内いたします。
+        その際、受講料のお支払いは発生いたしません。
+      </p>
     </div>
 
     <div class="cta-block" id="apply">
